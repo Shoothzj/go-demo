@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func main() {
+func http_call() {
 	resp, err := http.Get("http://example.com/")
 	if err != nil {
 		return
