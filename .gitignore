@@ -8,3 +8,6 @@
 target/*
 
 **/go.sum
+
+# 编译后程序
+**.exe
