@@ -32,10 +32,6 @@ func main() {
 	ticker := time.NewTicker(time.Duration(*deletePeriod) * time.Second)
 	defer ticker.Stop()
 	done := make(chan bool)
-	//go func() {
-	//	time.Sleep(10 * time.Second)
-	//	done <- true
-	//}()
 	for {
 		select {
 		case <-done:
